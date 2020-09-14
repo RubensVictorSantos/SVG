@@ -1,0 +1,10 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">   
+    <path d=" M13 20 L21 20 L29 65 V30 H82 L73 63 H26.8 L24 70 H78" fill="transparent" stroke="black"  stroke-width="5"/>
+    
+    <g fill="transparent" stroke="black"  stroke-width="5">
+        <circle cx="38" cy="79" r="6"/>
+        <circle cx="65" cy="79" r="6"/>
+    </g>
+</svg>
+
+<!-- Create by Rubens Victor -->
