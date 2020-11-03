@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+
+    </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .container {
+            width: 100vw;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            box-sizing: border-box;
+        }
+
+        .w0 {
+            /* background-color:blueviolet; */
+            width: 64px;
+            height: 64px;
+            padding: 5px;
+            border: 1px solid black;
+            /* background-image: url(  './fill/ico-heart.svg' );
+                background-repeat: no-repeat; */
+        }
+
+        .w1 {
+            /* background-color:blueviolet; */
+            width: 128px;
+            height: 128px;
+            border: 1px solid black;
+            /* background-image: url(  './fill/ico-heart.svg' );
+                background-repeat: no-repeat; */
+        }
+
+        .w2 {
+            /* background-color:blueviolet; */
+            width: 256px;
+            height: 256px;
+            border: 1px solid black;
+            /* background-image: url(  './fill/ico-heart.svg' );
+                background-repeat: no-repeat; */
+        }
+
+        .w3 {
+            /* background-color:blueviolet; */
+            width: 512px;
+            height: 512px;
+            border: 1px solid black;
+            margin-bottom: 5px;
+            /* background-image: url( './fill/ico-heart.svg' );
+                background-repeat: no-repeat; */
+        }
+    </style>
+    <script type="text/javascript" src="./jquery-3.5.1/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container">
+
+        </div> -->
+
+</body>
+<script>
+
+    window.onload = createImg;
+
+    const imagem = {
+        'crt'   : 'cart.svg',
+        'crtr'  : 'cart-round.svg',
+        'chk'   : 'check.svg',
+        'hrt'   : 'heart.svg',
+        'lgk'   : 'logo-kmodas.svg',
+        'mn'    : 'menu.svg',
+        'mnr'   : 'menu-round.svg',
+        'pls'   : 'plus.svg',
+        'plsc'  : 'plus-circle.svg',
+        'sv'    : 'save.svg',
+        'usr'   : 'user.svg',
+        'usrc'  : 'user-circle.svg',
+    }
+
+    const createDiv = (cls,con,img) => {
+        for (let e in imagem) {
+
+            var img = document.createElement("IMG");
+            img.classList.add('w' + cls)
+            img.src = imagem[e];
+
+
+
+            con.appendChild(img);
+
+        }
+    }
+
+
+    function createImg() {
+
+        var img = '';
+        var con = '';
+        let i = 0;
+
+        while (i < 4) {
+
+            con = document.createElement("DIV")
+
+            con.classList.add('container');
+
+            document.body.appendChild(con);
+
+            createDiv(i,con,img);
+
+            i++
+
+        }
+    }
+
+
+</script>
+
+</html>
