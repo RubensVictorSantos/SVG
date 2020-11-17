@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <div class="painel" >
+    <div class="painel">
         <div>
-            <label for="svg-width">Width: </label> <input type="range" min="64" max="650" id='svg-width' step="1"> </br>
+            <label for="svg-width">Zoom: </label> <input type="range" min="64" max="650" id='svg-width' step="1"> </br>
             <label for="svg-str">Stroke: </label> <input type="color" value="#000000" id='svg-str'>
             <label for="svg-str-w">Stroke Width: </label> <input type="number" min="0" value="5" id='svg-str-w'> </br>
             <label for="svg-bg-color">Bg-color: </label><input type="color" value="#000000" id='svg-bg-color'>
@@ -33,7 +33,8 @@
             </select></br>
 
             <label for="p-str">Stroke: </label><input type="color" value="#000000" id='p-str'>
-            <label for="p-str-w">Stroke width: </label><input type="number" value="5" min="0" step="0.01" id='p-str-w'></br>
+            <label for="p-str-w">Stroke width: </label><input type="number" value="5" min="0" step="0.01"
+                id='p-str-w'></br>
 
             <label for="p-str-lcap">Stroke-linecap: </label>
             <select name="p-str-lcap" id='p-str-lcap'>
@@ -94,12 +95,80 @@
     </div>
 
     <div class="container">
+
+        <h2 style="width: 100%;">Cart:</h2>
+
         <div class="box">
-            <!-- CART -->
+
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">   
+                <g fill="rgb(255,200,200)" fill-rule="evenodd">
+                    <path d=" M13 22.5
+                            H18.9
+                            L25.7 60.55
+                            H25.1
+                            L20.33 72.5
+                            H32.5
+                            A8.5 8.5 0 10 43.5 72.5
+                            
+                            H59.5
+                            A8.5 8.5 0 10 70.5 72.5
+                
+                            H78
+                            V67.5
+                            H27.65
+                            L28.55 65.45
+                            H74.94
+                            L85.3 27.5H26.5V 36.61 L 23.1 17.5 H 13 V 22.55 Z
+                
+                            M 37.988 82.5 A3.5 3.5 0 10 37.987 82.5
+                
+                            M 65.01 82.5 A3.5 3.5 0 10 65.0099 82.5
+                
+                            M 31.47 33 V 60.5 H 71.1 L 78.75 32.45 H 31.46 z"
+                            
+                            />
+                </g>
+            </svg>
+
+        </div>
+
+        <div class="box">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 100 100">
+                <path fill="rgb(255,200,200)" fill-rule="evenodd" 
+                    d=" M13 22.5
+                        H18.9
+                        L25.7 60.55
+                        H25.1
+                        L20.33 72.5
+                        H32.5
+                        A8.5 8.5 0 10 43.5 72.5
+                        
+                        H59.5
+                        A8.5 8.5 0 10 70.5 72.5
+            
+                        H78
+                        V67.5
+                        H27.65
+                        L28.55 65.45
+                        H74.94
+                        L85.3 27.5H26.5V 36.61 L 23.1 17.5 H 13    V 22.55
+            
+                        M 37.98 82.5 A3.5 3.5 0 10 37.97 82.5
+            
+                        M 65.01 82.5 A3.5 3.5 0 10 65 82.5
+            
+                        M 31.47 32.4 V 60.5 H 71.1 L 78.75 32.45 H 31.5
+            
+                        M 5 5 L 95 5 95 95 5 95 z
+                    " />
+            </svg>
+        </div>
+
+        <div class="box">
             <svg version="1.1" viewBox="0 0 100 100">
-                <path d=" M 13 20 L 21 20 L 29 65 V 30 H 82 L 73 63 H 26.8 L 24 70 H 78
-                    M 4 4 L 96 4 L 96 96 L 4 96 z" fill="transparent" stroke="rgb(100,50,255)" stroke-width="5"
-                    stroke-linecap="round" stroke-linejoin="round" />
+                <path d=" M 13 20 L 21 20 L 29 65 V 30 H 82 L 73 63 H 26.8 L 24 70 H 78"
+                fill="transparent" stroke="rgb(100,50,255)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 
                 <circle cx="38" cy="79" r="6" fill="transparent" stroke="rgb(100,50,255)" stroke-width="5" />
 
@@ -108,14 +177,61 @@
         </div>
 
         <div class="box">
+            <svg version="1.1" viewBox="0 0 100 100">
+                <rect x="5" y="5" width="90" height="90" rx="5" stroke-width="0" stroke="0" fill="rgb(100,50,255)"/>
+                
+                <path d=" M 13 20 L 21 20 L 29 65 V 30 H 82 L 73 63 H 26.8 L 24 70 H 78"
+                    fill="transparent"
+                    stroke="rgb(255,255,255)"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+
+                <circle cx="38" cy="79" r="6" fill="transparent" stroke="rgb(255,255,255)" stroke-width="5" />
+
+                <circle cx="65" cy="79" r="6" fill="transparent" stroke="rgb(255,255,255)" stroke-width="5" />
+            </svg>
+
+        </div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+
+        <h2 style="width: 100%;">Check:</h2>
+
+        <div class="box">
             <!-- CHECK -->
             <svg version="1.1" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="40" stroke="rgb(255,0,0)" stroke-width="5" fill="rgb(255,0,0)" />
-                <path d="M 25 45 L 35 70 75 35" 
-                stroke-width="5" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" fill="transparent"/>
+                <path d="M 25 45 L 35 70 75 35" stroke-width="5" stroke="rgb(255,255,255)" stroke-linecap="round"
+                    stroke-linejoin="round" fill="transparent" />
 
             </svg>
         </div>
+
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+
+        <h2 style="width: 100%;">Heart:</h2></br>
 
         <div class="box">
             <!-- HEART -->
@@ -129,17 +245,29 @@
                     A 10 10, 10, 0 0, 30 50 
                     C 30 50 29 50 50 70
                     C 50 70 50 70 70 50
-                    Z " fill="rgba(255,50,100,0.5)"
-                    stroke="rgba(255,50,100)"
-                    stroke-width="5"
-                    />
+                    Z " fill="rgba(255,50,100,0.5)" stroke="rgba(255,50,100)" stroke-width="5" />
 
                 </g>
             </svg>
         </div>
 
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+
+        <h2 style="width: 100%;">Letters:</h2>
+
         <div class="box">
-            <!-- LOGO KMODAS -->
             <svg version="1.1" viewBox="0 0 100 100">
 
                 <path stroke="white" stroke-width="0.5" fill="red" d="
@@ -170,6 +298,22 @@
             </svg>
         </div>
 
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+
+        <h2 style="width: 100%;">Menu:</h2></br>
+
         <div class="box">
             <!-- MENU -->
             <svg version="1.1" viewBox="0 0 100 100">
@@ -183,6 +327,22 @@
             </svg>
         </div>
 
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+
+        <h2 style="width: 100%;">Plus:</h2></br>
+
         <div class="box">
             <!-- PLUS -->
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -193,6 +353,22 @@
                 </g>
             </svg>
         </div>
+
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+
+        <h2 style="width: 100%;">Save:</h2></br>
 
         <div class="box">
             <!-- SAVE -->
@@ -210,6 +386,22 @@
 
             </svg>
         </div>
+
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+
+        <h2 style="width: 100%;">User:</h2></br>
 
         <div class="box">
             <!-- CIRCLE -->
@@ -240,6 +432,21 @@
             </svg>
         </div>
 
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+        <div class="  box"></div>
+
+        <h2 style="width: 100%;">View:</h2></br>
+
         <div class="box">
             <!-- VIEW -->
             <svg version="1.1" viewBox="0 0 100 100">
@@ -251,129 +458,6 @@
 
             </svg>
         </div>
-
-        <div class="  box">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">   
-                <path fill="rgb(255,200,200)" stroke="BLACK" fill-rule="evenodd" stroke-width="0.001" 
-                    d=" M13 22.5
-                        H18.9
-                        L25.7 60.55
-                        H25.1
-                        L20.33 72.5
-                        H32.5
-                        A8.5 8.5 0 10 43.5 72.5
-                        
-                        H59.5
-                        A8.5 8.5 0 10 70.5 72.5
-            
-                        H78
-                        V67.5
-                        H27.65
-                        L28.55 65.45
-                        H74.94
-                        L85.3 27.5H26.5V 36.61 L 23.1 17.5 H 13    V 22.55
-            
-                        M 37.98 82.5 A3.5 3.5 0 10 37.97 82.5
-            
-                        M 65.01 82.5 A3.5 3.5 0 10 65 82.5
-            
-                        M 31.47 32.4 V 60.5 H 71.1 L 78.75 32.45 H 31.5
-            
-                        M 5 5 L 95 5 95 95 5 95 z
-                    "/>
-            </svg>
-            
-            <!-- Create by Rubens Victor-->
-
-        </div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
         <div class="  box"></div>
         <div class="  box"></div>
         <div class="  box"></div>
