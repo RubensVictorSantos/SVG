@@ -50,7 +50,7 @@ body {
 .box {
     width: 64px;
     height: 64px;
-    padding: 1px;
+    padding: 2px;
     background-color: white;
     border: var(--border);
     border-radius: 6px;
