@@ -1,0 +1,79 @@
+:root {
+    --border: 1px solid rgb(200, 200, 200);
+    --bg-gray: rgb(253, 253, 253);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* flex-direction: column; */
+    background-color: var(--bg-gray);
+    /* position: relative; */
+}
+
+.painel {
+    width: 250px;
+    height: 590px;
+    border: var(--border);
+    border-radius: 6px;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    margin: 20px;
+    background-color: rgba(250, 250, 250, 0.3);
+    padding: 0.5rem;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* align-items:flex-start ; */
+    margin: 1.5rem;
+    box-sizing: border-box;
+    background-color: var(--bg-gray)
+}
+
+.box {
+    width: 64px;
+    height: 64px;
+    padding: 1px;
+    background-color: white;
+    border: var(--border);
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+input[type=number] {
+    text-align: center;
+    width: 50px;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(253, 253, 253, 0.5);
+}
+
+input[type=color] {
+    width: 20px;
+    padding: 0px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+select {
+    border: none;
+    background-color: rgb(240, 240, 240);
+}
