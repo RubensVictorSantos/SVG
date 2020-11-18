@@ -199,7 +199,7 @@
 
     pstroke.addEventListener('input', svgPath, false);
     pfill.addEventListener('input', svgPath, false);
-    pstrokew.addEventListener('change', svgPath, false);
+    pstrokew.addEventListener('input', svgPath, false);
     pfillrule.addEventListener('input', svgPath, false);
     plcap.addEventListener('change', svgPath, false);
     pljoin.addEventListener('change', svgPath, false);
