@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="painel">
+    <div class="painel" id="painel">
         <div>
             <label for="svg-width">Zoom: </label> <input type="range" min="64" max="650" id='svg-width' step="1"> </br>
             <label for="svg-str">Stroke: </label> <input type="color" value="#000000" id='svg-str'>
@@ -21,8 +21,12 @@
         </div>
         <hr />
 
-        <div>
-            <h5>Path:</h5>
+        <h5 style="display:inline">Path:
+        </h5>
+
+        <input type="button" id="btn-path" value="+"/>
+
+        <div class="box-painel" style="display: none;">
             <label for="p-fill">Fill: </label><input type="color" value="#000000" id='p-fill'>
 
             <label for="p-fill-rule">Fill-rule: </label>
@@ -53,8 +57,13 @@
             </select>
         </div>
         <hr />
-        <div>
-            <h5>Rect:</h5>
+
+        <h5 style="display:inline">Rect:
+        </h5>
+
+        <input type="button" id="btn-rect" value="+"/>
+
+        <div class="box-painel" style="display: none;">
             <label for="r-rx">rx: </label><input type="number" min="0" value="0" id='r-rx'>
             <label for="r-ry">ry: </label><input type="number" min="0" value="0" id='r-ry'></br>
             <label for="r-fill">Fill:</label><input type="color" value="#000000" id='r-fill'></br>
@@ -62,16 +71,25 @@
             <label for="r-str-w">Stroke width:</label><input type="number" min="0" value="0" id='r-str-w'></br>
         </div>
         <hr />
-        <div>
-            <h5>Circle:</h5>
+
+        <h5 style="display:inline">Circle:
+        </h5>
+
+        <input type="button" id="btn-circle" value="+"/>
+
+        <div class="box-painel" style="display: none;">
             <label>r: </label><input type="number" min="0" id='c-r'></br>
             <label>Stroke: </label> <input type="color" value="#000000" id='c-str'></br>
             <label>Fill: </label> <input type="color" value="#000000" id='c-fill'></br>
             <label>Stroke width: </label><input type="number" id='c-str-w'></br>
         </div>
         <hr />
-        <div>
-            <h5>Line:</h5>
+
+        <h5 style="display:inline">Line:</h5>
+
+        <input type="button" id="btn-line" value="+"/>
+
+        <div class="box-painel" style="display: none;">
             <label>Stroke:</label> <input type="color" value="#000000" id='l-str'>
             <label>Fill:</label> <input type="color" value="#000000" id='l-fill'></br>
             <label>Stroke width:</label><input type="number" value="5" id='l-str-w'></br>

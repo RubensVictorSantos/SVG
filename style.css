@@ -17,9 +17,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    /* flex-direction: column; */
     background-color: var(--bg-gray);
-    /* position: relative; */
+    
 }
 
 .painel {
@@ -33,6 +32,12 @@ body {
     margin: 20px;
     background-color: rgba(250, 250, 250, 0.3);
     padding: 0.5rem;
+}
+
+input[type=button]{
+    border: none;
+    background-color: transparent;
+    outline-style: none;
 }
 
 .container {
@@ -56,6 +61,9 @@ body {
     border-radius: 6px;
     box-sizing: border-box;
     margin: 5px;
+}
+
+.box-painel{
 }
 
 input[type=number] {
