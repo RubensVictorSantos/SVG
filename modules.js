@@ -5,10 +5,11 @@
     const btnLine = document.getElementById('btn-line');
     const plcap = document.getElementById('p-str-lcap');
     const pljoin = document.getElementById('p-str-ljoin');
+    const boxPainel = document.getSelection
+    const box = document.getElementById('box1')
+    const textA = document.getElementById('textA') 
 
-
-
-    function openBox(e){
+    function openBoxPainel(e){
 
         const btn = e.target
 
@@ -25,10 +26,10 @@
         }
     }    
 
-    btnPath.addEventListener('click', openBox);
-    btnRect.addEventListener('click', openBox);
-    btnCircle.addEventListener('click', openBox);
-    btnLine.addEventListener('click', openBox);
+    btnPath.addEventListener('click', openBoxPainel);
+    btnRect.addEventListener('click', openBoxPainel);
+    btnCircle.addEventListener('click', openBoxPainel);
+    btnLine.addEventListener('click', openBoxPainel);
 
     function svg(e) {
 
@@ -191,4 +192,22 @@
 
     }
 
+    function bgBody(e){
+
+        console.log(e.target)
+
+        // for(e in boxPainel){
+        //     textA.value = textA.value + boxPainel[e].firstElementChild.innerHTML
+
+        //     console.log(boxPainel[1].firstElementChild);
+
+        // }
+        // let body = document.getElementsByTagName('BODY');
+
+        // body.style.backgroundColor = 'red'
+
+    }
+
+
     painel.addEventListener('input', svg, false);
+    boxPainel.addEventListener('click', bgBody);
