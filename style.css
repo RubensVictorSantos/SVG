@@ -17,9 +17,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    /* flex-direction: column; */
     background-color: var(--bg-gray);
-    /* position: relative; */
+    
 }
 
 .painel {
@@ -35,6 +34,12 @@ body {
     padding: 0.5rem;
 }
 
+input[type=button]{
+    border: none;
+    background-color: transparent;
+    outline-style: none;
+}
+
 .container {
     width: 100vw;
     height: auto;
@@ -48,14 +53,17 @@ body {
 }
 
 .box {
-    width: 64px;
-    height: 64px;
+    width: 300px;
+    height: 300px;
     padding: 2px;
     background-color: white;
     border: var(--border);
     border-radius: 6px;
     box-sizing: border-box;
     margin: 5px;
+}
+
+.box-painel{
 }
 
 input[type=number] {
@@ -66,11 +74,28 @@ input[type=number] {
 }
 
 input[type=color] {
-    width: 20px;
-    padding: 0px;
+    width: 15px;
+    height: 15px;
+    /* padding: 2px; */
+    margin: 0px;
     border: none;
-    border-radius: 50px;
+    /* border-radius: 50%; */
     background-color: transparent;
+}
+
+::-webkit-color-swatch-wrapper{
+    /* width: 20px; */
+    /* height: 20px; */
+    background-color: transparent;
+    /* overflow: hidden; */
+    padding: 0px;
+}
+
+::-webkit-color-swatch{
+    border: none;
+    /* width:5px!important; */
+    /* height: 20px; */
+    border-radius: 50%;
 }
 
 select {

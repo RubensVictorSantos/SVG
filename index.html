@@ -17,13 +17,17 @@
             <label for="svg-width">Zoom: </label> <input type="range" min="64" max="650" id='svg-width' step="1"> </br>
             <label for="svg-str">Stroke: </label> <input type="color" value="#000000" id='svg-str'>
             <label for="svg-str-w">Stroke Width: </label> <input type="number" min="0" value="5" id='svg-str-w'> </br>
-            <label for="svg-bg-color">Bg-color: </label><input type="color" value="#000000" id='svg-bg-color'>
+            <label for="svg-bg-color">Bg-color: </label><input type ="color" value="#000000" id='svg-bg-color'>
             <label for="svg-fill">Fill: </label> <input type="color" value="#000000" id='svg-fill'> </br>
         </div>
         <hr />
 
-        <div>
-            <h5>Path:</h5>
+        <h5 style="display:inline">Path:
+        </h5>
+
+        <input type="button" id="btn-path" value="+"/>
+
+        <div class="box-painel" style="display: none;">
             <label for="p-fill">Fill: </label><input type="color" value="#000000" id='p-fill'>
 
             <label for="p-fill-rule">Fill-rule: </label>
@@ -54,8 +58,13 @@
             </select>
         </div>
         <hr />
-        <div>
-            <h5>Rect:</h5>
+
+        <h5 style="display:inline">Rect:
+        </h5>
+
+        <input type="button" id="btn-rect" value="+"/>
+
+        <div class="box-painel" style="display: none;">
             <label for="r-rx">rx: </label><input type="number" min="0" value="0" id='r-rx'>
             <label for="r-ry">ry: </label><input type="number" min="0" value="0" id='r-ry'></br>
             <label for="r-fill">Fill:</label><input type="color" value="#000000" id='r-fill'></br>
@@ -63,16 +72,25 @@
             <label for="r-str-w">Stroke width:</label><input type="number" min="0" value="0" id='r-str-w'></br>
         </div>
         <hr />
-        <div>
-            <h5>Circle:</h5>
+
+        <h5 style="display:inline">Circle:
+        </h5>
+
+        <input type="button" id="btn-circle" value="+"/>
+
+        <div class="box-painel" style="display: none;">
             <label>r: </label><input type="number" min="0" id='c-r'></br>
             <label>Stroke: </label> <input type="color" value="#000000" id='c-str'></br>
             <label>Fill: </label> <input type="color" value="#000000" id='c-fill'></br>
             <label>Stroke width: </label><input type="number" id='c-str-w'></br>
         </div>
         <hr />
-        <div>
-            <h5>Line:</h5>
+
+        <h5 style="display:inline">Line:</h5>
+
+        <input type="button" id="btn-line" value="+"/>
+
+        <div class="box-painel" style="display: none;">
             <label>Stroke:</label> <input type="color" value="#000000" id='l-str'>
             <label>Fill:</label> <input type="color" value="#000000" id='l-fill'></br>
             <label>Stroke width:</label><input type="number" value="5" id='l-str-w'></br>
@@ -93,13 +111,17 @@
 
             </select>
         </div>
+
+        <textarea id="textA">
+
+        </textarea>
     </div>
 
     <div class="container">
 
         <h2 style="width: 100%;">Cart:</h2>
 
-        <div class="box">
+        <div class="box" id="box1">
             <svg version="1.1" viewBox="0 0 100 100">
                 <path fill="rgb(255,200,200)" fill-rule="evenodd" d=" M13 22.5
                         H18.9
@@ -187,15 +209,6 @@
                 <circle cx="65" cy="79" r="6" fill="transparent" stroke="rgb(255,255,255)" stroke-width="5" />
             </svg>
         </div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
 
         <h2 style="width: 100%;">Check:</h2>
 
@@ -208,20 +221,6 @@
 
             </svg>
         </div>
-
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
 
         <h2 style="width: 100%;">Heart:</h2></br>
 
@@ -269,17 +268,6 @@
                 </g>
             </svg>
         </div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
 
         <h2 style="width: 100%;">Letters:</h2>
 
@@ -314,20 +302,6 @@
             </svg>
         </div>
 
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-
         <h2 style="width: 100%;">Menu:</h2></br>
 
         <div class="box">
@@ -343,20 +317,6 @@
             </svg>
         </div>
 
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-
         <h2 style="width: 100%;">Plus:</h2></br>
 
         <div class="box">
@@ -369,20 +329,6 @@
                 </g>
             </svg>
         </div>
-
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
 
         <h2 style="width: 100%;">Save:</h2></br>
 
@@ -403,20 +349,6 @@
 
             </svg>
         </div>
-
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
 
         <h2 style="width: 100%;">User:</h2></br>
 
@@ -449,19 +381,6 @@
             </svg>
         </div>
 
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-
         <h2 style="width: 100%;">View:</h2></br>
 
         <div class="box">
@@ -475,21 +394,6 @@
 
             </svg>
         </div>
-
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-        <div class="  box"></div>
-
     </div>
 </body>
 <script type="text/javascript" src="modules.js"> </script>
