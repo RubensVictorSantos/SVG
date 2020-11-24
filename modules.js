@@ -1,4 +1,5 @@
     const painel = document.getElementById('painel');
+
     const btnPath = document.getElementById('btn-path');
     const btnRect = document.getElementById('btn-rect');
     const btnCircle = document.getElementById('btn-circle');
@@ -136,11 +137,11 @@
             if (id == 'c-str') {
             document.querySelectorAll("circle").forEach(function (path) {
                 path.style.stroke = e.target.value;
+
             });
 
         } else
             if (id == 'c-str-w') {
-
             document.querySelectorAll("circle").forEach(function (path) {
                 path.style.strokeWidth = e.target.value;
             });
@@ -160,7 +161,7 @@
         } else
             if (id == 'l-str') {
             document.querySelectorAll("line").forEach(function (path) {
-                path.style.stroke = event.target.value;
+                path.style.stroke = input.value;
             });
 
         } else
