@@ -24,11 +24,10 @@
 
         <h5 style="display:inline">Path:
         </h5>
-
-        <input type="button" id="btn-path" value="+"/>
+        <span id="btn-path">&#9662;</span>
 
         <div class="box-painel" style="display: none;">
-            <label for="p-fill">Fill: </label><input type="color" value="#000000" id='p-fill'>
+            <label for="p-fill">Fill: </label><input type="color" value="#ff0000" id='p-fill'>
 
             <label for="p-fill-rule">Fill-rule: </label>
             <select name="p-fill-rule" id='p-fill-rule'>
@@ -37,7 +36,7 @@
 
             </select></br>
 
-            <label for="p-str">Stroke: </label><input type="color" value="#000000" id='p-str'>
+            <label for="p-str">Stroke: </label><input type="color" value="#00f0f0" id='p-str'>
             <label for="p-str-w">Stroke width: </label><input type="number" value="5" min="0" step="0.1"
                 id='p-str-w'></br>
 
@@ -61,38 +60,35 @@
 
         <h5 style="display:inline">Rect:
         </h5>
-
-        <input type="button" id="btn-rect" value="+"/>
+        <span id="btn-rect">&#9662;</span>
 
         <div class="box-painel" style="display: none;">
             <label for="r-rx">rx: </label><input type="number" min="0" value="0" id='r-rx'>
             <label for="r-ry">ry: </label><input type="number" min="0" value="0" id='r-ry'></br>
-            <label for="r-fill">Fill:</label><input type="color" value="#000000" id='r-fill'></br>
-            <label for="r-str">Stroke: </label><input type="color" value="#000000" id='r-str'>
+            <label for="r-fill">Fill:</label><input type="color" value="#0fff00" id='r-fill'></br>
+            <label for="r-str">Stroke: </label><input type="color" value="#5800f0" id='r-str'>
             <label for="r-str-w">Stroke width:</label><input type="number" min="0" value="0" id='r-str-w'></br>
         </div>
         <hr />
 
         <h5 style="display:inline">Circle:
         </h5>
-
-        <input type="button" id="btn-circle" value="+"/>
+        <span id="btn-circle">&#9662;</span>
 
         <div class="box-painel" style="display: none;">
             <label>r: </label><input type="number" min="0" id='c-r'></br>
-            <label>Stroke: </label> <input type="color" value="#000000" id='c-str'></br>
-            <label>Fill: </label> <input type="color" value="#000000" id='c-fill'></br>
+            <label>Stroke: </label> <input type="color" value="#880999" id='c-str'></br>
+            <label>Fill: </label> <input type="color" value="#0f8050" id='c-fill'></br>
             <label>Stroke width: </label><input type="number" id='c-str-w'></br>
         </div>
         <hr />
 
         <h5 style="display:inline">Line:</h5>
-
-        <input type="button" id="btn-line" value="+"/>
+        <span id="btn-line">&#9662;</span>
 
         <div class="box-painel" style="display: none;">
-            <label>Stroke:</label> <input type="color" value="#000000" id='l-str'>
-            <label>Fill:</label> <input type="color" value="#000000" id='l-fill'></br>
+            <label>Stroke:</label> <input type="color" value="#995505" id='l-str'>
+            <label>Fill:</label> <input type="color" value="#99f900" id='l-fill'></br>
             <label>Stroke width:</label><input type="number" value="5" id='l-str-w'></br>
 
             <label for="l-str-lcap">Stroke-linecap: </label>
@@ -241,9 +237,11 @@
         </div>
 
         <h2 style="width: 100%;">Check:</h2>
+   
+
+        <!-- CHECK -->
 
         <div class="box">
-            <!-- CHECK -->
             <svg version="1.1" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="40"
                     style="stroke: rgb(255,0,0);
@@ -263,9 +261,9 @@
         </div>
 
         <h2 style="width: 100%;">Heart:</h2></br>
-
-        <div class="box">
-            <!-- HEART -->
+        <!-- HEART -->
+        
+        <!-- <div class="box">
             <svg version="1.1" viewBox="0 0 100 100">
                 <path d="
                     M 70 50 
@@ -355,10 +353,12 @@
             </svg>
         </div>
 
-        <h2 style="width: 100%;">Menu:</h2></br>
+        <h2 style="width: 100%;">Menu:</h2></br> -->
 
-        <div class="box">
             <!-- MENU -->
+
+
+        <!-- <div class="box">
             <svg version="1.1" viewBox="0 0 100 100">
                 <rect x="5" y="5" rx="5" 
                     style="width:90; height:90; 
@@ -385,10 +385,12 @@
             </svg>
         </div>
 
-        <h2 style="width: 100%;">Plus:</h2></br>
+        <h2 style="width: 100%;">Plus:</h2></br> -->
 
-        <div class="box">
             <!-- PLUS -->
+
+
+        <!-- <div class="box">
             <svg version="1.1" viewBox="0 0 100 100">
                 <circle cx='50' cy='50' r='35' 
                     style="stroke-width: 5; 
@@ -406,11 +408,12 @@
             </svg>
         </div>
 
-        <h2 style="width: 100%;">Save:</h2></br>
+        <h2 style="width: 100%;">Save:</h2></br> -->
 
->>>>>>> ca05fd62ad042b77417f090145595e6458b788d6
-        <div class="box">
             <!-- SAVE -->
+
+
+        <!-- <div class="box">
             <svg version="1.1" viewBox="0 0 100 100">
                 <rect x="5" y="5" rx="5" style="width: 90; height:90; 
                     stroke-width: 0; 
@@ -452,9 +455,11 @@
         </div>
 
         <h2 style="width: 100%;">User:</h2></br>
+ -->
 
-        <div class="box">
             <!-- USER - CIRCLE -->
+        
+        <!-- <div class="box">
             <svg version="1.1" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="41.5" style="stroke: #003566;
                     fill: #003566; 
@@ -475,10 +480,12 @@
                 <circle cx="50" cy="36" r="13" style="fill: rgb(255,255,255)" />
 
             </svg>
-        </div>
+        </div> -->
 
-        <div class="box">
             <!-- USER -->
+
+
+        <!-- <div class="box">
             <svg version="1.1" viewBox="0 0 100 100">
                 <path style="fill: #003566;
                     stroke-width:5"
@@ -508,9 +515,11 @@
         </div>
 
         <h2 style="width: 100%;">View:</h2></br>
+ -->
 
-        <div class="box">
             <!-- VIEW -->
+        
+            <!-- <div class="box">
             <svg version="1.1" viewBox="0 0 100 100">
                 <circle fill="rgb(80, 191, 255)" cx="50" cy="50" r="30" stroke-width="5" />
                 <g stroke="white" stroke-linecap="round" stroke-linejoin="round" fill="transparent">
@@ -519,7 +528,7 @@
                 </g>
 
             </svg>
-        </div>
+        </div> -->
     </div>
 </body>
 <script type="text/javascript" src="modules.js"> </script>

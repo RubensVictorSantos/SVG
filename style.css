@@ -34,6 +34,12 @@ body {
     padding: 0.3rem;
 }
 
+span{
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
 .container {
     width: 100vw;
     height: auto;
@@ -53,12 +59,6 @@ body {
     border-radius: 6px;
     box-sizing: border-box;
     margin: 5px;
-}
-
-input[type=button]{
-    border: none;
-    background-color: transparent;
-    outline-style: none;
 }
 
 input[type=number] {

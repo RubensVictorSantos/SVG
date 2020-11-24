@@ -1,14 +1,14 @@
-    const painel = document.getElementById('painel');
+    const painel    = document.getElementById('painel');
 
-    const btnPath = document.getElementById('btn-path');
-    const btnRect = document.getElementById('btn-rect');
+    const btnPath   = document.getElementById('btn-path');
+    const btnRect   = document.getElementById('btn-rect');
     const btnCircle = document.getElementById('btn-circle');
-    const btnLine = document.getElementById('btn-line');
-    const plcap = document.getElementById('p-str-lcap');
-    const pljoin = document.getElementById('p-str-ljoin');
+    const btnLine   = document.getElementById('btn-line');
+    const plcap     = document.getElementById('p-str-lcap');
+    const pljoin    = document.getElementById('p-str-ljoin');
     const boxPainel = document.getElementById('container');
-    const boxcode = document.getElementById('box-code');
-    const textA = document.getElementById('textA');
+    const boxcode   = document.getElementById('box-code');
+    const textA     = document.getElementById('textA');
 
     function openBoxPainel(e){
 
@@ -18,11 +18,11 @@
 
         if(box.style.display == 'none'){
             box.style.display = 'block';
-            btn.value = ' -';
+            btn.innerHTML = '&#9652;';
 
         }else{
             box.style.display = 'none';
-            btn.value = '+';
+            btn.innerHTML = '&#9662;' ;
 
         }
     }    
@@ -198,7 +198,6 @@
     function bgBody(e){
 
         document.querySelectorAll(".box").forEach((box) => {
-            // viewCode.classList.add('open-viewcode');
 
             box.addEventListener('click', (event) => {             
                 boxcode.append(viewCode)
@@ -206,7 +205,6 @@
                 
             });
         });
-
     }
 
     painel.addEventListener('input', svg, false);
