@@ -27,9 +27,9 @@
         '14' : 'bg_14.png',
     }
 
-    window.onload = cargarBg();
+    window.onload = chargeBg();
 
-    function cargarBg(){
+    function chargeBg(){
 
         let c = 1;
         let size = Object.keys(obj_img).length
