@@ -47,7 +47,7 @@ span{
     flex-wrap: wrap;
     margin: 1.5rem;
     box-sizing: border-box;
-    background-color: var(--bg-gray)
+    background-color: transparent;
 }
 
 .box {
