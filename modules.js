@@ -10,6 +10,46 @@
     const boxcode   = document.getElementById('box-code');
     const textA     = document.getElementById('textA');
 
+    let obj_img = {
+        '1' : 'bg_01.png',
+        '2' : 'bg_02.png',
+        '3' : 'bg_03.png',
+        '4' : 'bg_04.png',
+        '5' : 'bg_05.png',
+        '6' : 'bg_06.png',
+        '7' : 'bg_07.png',
+        '8' : 'bg_08.png',
+        '9' : 'bg_09.png',
+        '10' : 'bg_10.png',
+        '11' : 'bg_11.png',
+        '12' : 'bg_12.png',
+        '13' : 'bg_13.png',
+        '14' : 'bg_14.png',
+        '15' : 'bg_15.png',
+    }
+
+
+    window.onload = cargarBg();
+
+    function cargarBg(){
+        console.log(obj_img)
+        
+        let c = 1;
+        setInterval(() =>{
+            c = c + 1
+            
+            // for(let i in obj_img){
+                document.body.style.backgroundImage =  `url(./Background/bgcolorido/${obj_img[c]})`
+                
+            // }
+
+            if(c > 14){
+                c = 0;
+            }
+
+        }, 100000);
+    }
+
     function openBoxPainel(e){
 
         const btn = e.target
