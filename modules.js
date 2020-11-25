@@ -25,25 +25,21 @@
         '12' : 'bg_12.png',
         '13' : 'bg_13.png',
         '14' : 'bg_14.png',
-        '15' : 'bg_15.png',
     }
-
 
     window.onload = cargarBg();
 
     function cargarBg(){
-        console.log(obj_img)
-        
+
         let c = 1;
+        let size = Object.keys(obj_img).length
+
         setInterval(() =>{
             c = c + 1
             
-            // for(let i in obj_img){
-                document.body.style.backgroundImage =  `url(./Background/bgcolorido/${obj_img[c]})`
-                
-            // }
+            document.body.style.backgroundImage =  `url(./Background/bgcolorido/${obj_img[c]})`
 
-            if(c > 14){
+            if(c > size){
                 c = 0;
             }
 
