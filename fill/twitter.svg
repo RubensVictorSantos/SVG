@@ -1,10 +1,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
-    <path style="fill: transparent;
+    <path style="fill: #0099ff;
         stroke: #0099ff;
         fill-rule: evenodd;
-        stroke-width: 5;
-        stroke-linecap: round;
-        stroke-linejoin: round;" 
+        stroke-width: 0" 
     
         d=" M 27 32
         C 39 45, 50 43.8, 50.4 43.8 
@@ -20,10 +18,9 @@
         C 26.5 55 25 47.5 25.5 45.5
         C 27 47 30 47 30.5 46.7 
         C 24.5 44.7 25 34 27 32
-        Z
 
         M 90 49.99
-        A 45 45 0 10 90 50"
+        A 40 40 0 10 90 50"
     />
 </svg>
 
