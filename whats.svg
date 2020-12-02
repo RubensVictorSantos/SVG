@@ -1,16 +1,17 @@
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
                     <path style="
-                        fill: transparent;
+                        fill: #00ff88;
+                        fill-rule: evenodd;
                         stroke: tomato; 
-                        stroke-width: 0.5;"
+                        stroke-width: 0;"
                         
-                        d="M 50 93
+                        d=" M 50 93
                             A 46.3  46.3    0 1 1   50.1  92.9999
                             
                             M 21    76
                             L 25    60.5
                             A 29    29      0 1 1   37    72
-                            L 21    76 Z
+                            L 21    76
 
                             M 28    69
                             L 30    60
@@ -25,7 +26,7 @@
                             C 51    52.5    48      52,     43.5    46
                             C 43    44.8    42      44.5,   43.50   43
                             C 47    40      44.3    38.9,   44.1    37.3
-                            C 42.6  32      41      33,     39.1    33
+                            C 42.6  32      41      33,     39.1    33 Z
 
                         "
                         />
