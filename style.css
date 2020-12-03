@@ -113,3 +113,13 @@ select {
     border-radius: 50px;
     background-color: rgba(50,50,50,0.3);
 }
+
+.painel::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+
+.painel::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.9);
+}
