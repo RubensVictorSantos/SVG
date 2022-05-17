@@ -1,0 +1,138 @@
+body
+    background-color: #faf9fd
+    font-family: Arial, Helvetica, sans-serif
+
+.main-container
+    display: flex
+    justify-content: column
+    position: relative
+
+    span
+        border-radius: 50px
+        cursor: pointer
+
+input
+    outline: none
+
+.painel
+    width: 350px
+    height:
+    overflow: auto
+    background-color: white
+    padding: 1rem
+    box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2)
+
+    .painel-title
+        width: 100%
+        text-align: center
+        text-transform: uppercase
+        padding: .5rem
+
+    input
+        &[type=number]
+            text-align: center
+            width: 50px
+            border: 1px solid rgb(200, 200, 200)
+            background-color: rgba(253, 253, 253, 0.5)
+
+        &[type=range]
+            height: 5px
+            background-color: transparent
+            border-color: transparent
+            border-width: 6px 0
+            color: transparent
+
+            &::-ms-track
+                width: 300px
+                height: 5px
+                background-color: transparent
+                border-color: transparent
+                border-width: 6px 0
+                color: transparent
+
+            &::-ms-fill-lower
+                background: #777
+                border-radius: 10px
+
+            &::-ms-fill-upper
+                background: #ddd
+                border-radius: 10px
+
+            &::-ms-thumb
+                border: none
+                height: 16px
+                width: 16px
+                border-radius: 50%
+                background: goldenrod
+
+            &:focus::-ms-fill-lower
+                background: #888
+
+            &:focus::-ms-fill-upper
+                background: #ccc
+
+        &[type=color]
+            width: 22px
+            height: 20px
+            margin: 0px
+            border: none
+            background-color: transparent
+
+            &::-webkit-color-swatch-wrapper
+                background-color: transparent
+                padding: 0px
+
+                &::-webkit-color-swatch
+                    border: none
+                    border-radius: 50%
+// ------------------------------------------------------------
+select
+    border: none
+    background-color: rgb(240, 240, 240)
+
+.open-viewcode
+    max-width: 300px
+    max-height: 250px
+    border: none
+    border-radius: 3px
+    padding-left: 10px
+    box-sizing: border-box
+    margin: 5px
+    background-color: rgba(230,230,230, 0.3)
+    overflow: auto
+    color: black
+
+    &::-webkit-scrollbar
+        width: 5px
+        height: 5px
+
+    &::-webkit-scrollbar-thumb
+        border-radius: 50px
+        background-color: rgba(50,50,50,0.3)
+
+.painel::-webkit-scrollbar
+    width: 5px
+    height: 5px
+
+.painel::-webkit-scrollbar-thumb
+    border-radius: 50px
+    background-color: rgba(255,255,255,0.9)
+
+.container
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-wrap: wrap
+    overflow: auto
+    background-color: transparent
+    padding: 1rem
+
+    .box
+        width: 300px
+        height: 300px
+        padding: 2px
+        box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2)
+        background-color: white
+        border-radius: 6px
+        box-sizing: border-box
+        margin: 5px

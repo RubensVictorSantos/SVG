@@ -1,0 +1,222 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  height: 100%;
+  padding: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f2e6ff !important;
+}
+
+.main-container .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(200, 200, 200, 0.3);
+          box-shadow: 0px 0px 10px 3px rgba(200, 200, 200, 0.3);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .boxes div {
+  width: 150px;
+  height: 200px;
+  border-radius: 2px;
+}
+
+.main-container .boxes p {
+  padding: 0rem;
+  margin: .3rem 0 0 0;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.main-container .boxes p::before {
+  content: "";
+  padding: 0rem .5rem;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.bg-gradient1 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#db2044), to(#e233b8));
+  background-image: linear-gradient(to top right, #db2044, #e233b8);
+}
+
+.bg-gradient1 ~ p::before {
+  background-color: #db2044;
+}
+
+.bg-gradient1 ~ p ~ p::before {
+  background-color: #e233b8;
+}
+
+.bg-gradient2 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#3fff7c), to(#3ffbe0));
+  background-image: linear-gradient(to top right, #3fff7c, #3ffbe0);
+}
+
+.bg-gradient2 ~ p::before {
+  background-color: #3fff7c;
+}
+
+.bg-gradient2 ~ p ~ p::before {
+  background-color: #3ffbe0;
+}
+
+.bg-gradient3 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#6b2cf5), to(#d450e6));
+  background-image: linear-gradient(to top right, #6b2cf5, #d450e6);
+}
+
+.bg-gradient3 ~ p::before {
+  background-color: #6b2cf5;
+}
+
+.bg-gradient3 ~ p ~ p::before {
+  background-color: #d450e6;
+}
+
+.bg-gradient4 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#2f80ff), to(#3ccbff));
+  background-image: linear-gradient(to top right, #2f80ff, #3ccbff);
+}
+
+.bg-gradient4 ~ p::before {
+  background-color: #2f80ff;
+}
+
+.bg-gradient4 ~ p ~ p::before {
+  background-color: #3ccbff;
+}
+
+.bg-gradient5 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ff4ba7), to(#ffda64));
+  background-image: linear-gradient(to top right, #ff4ba7, #ffda64);
+}
+
+.bg-gradient5 ~ p::before {
+  background-color: #ff4ba7;
+}
+
+.bg-gradient5 ~ p ~ p::before {
+  background-color: #ffda64;
+}
+
+.bg-gradient6 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#a1ffd9), to(#f3ff77));
+  background-image: linear-gradient(to top right, #a1ffd9, #f3ff77);
+}
+
+.bg-gradient6 ~ p::before {
+  background-color: #a1ffd9;
+}
+
+.bg-gradient6 ~ p ~ p::before {
+  background-color: #f3ff77;
+}
+
+.bg-gradient7 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#6f085a), to(#c51c53));
+  background-image: linear-gradient(to top right, #6f085a, #c51c53);
+}
+
+.bg-gradient7 ~ p::before {
+  background-color: #6f085a;
+}
+
+.bg-gradient7 ~ p ~ p::before {
+  background-color: #c51c53;
+}
+
+.bg-gradient8 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#fe3d6c), to(#fc9995));
+  background-image: linear-gradient(to top right, #fe3d6c, #fc9995);
+}
+
+.bg-gradient8 ~ p::before {
+  background-color: #fe3d6c;
+}
+
+.bg-gradient8 ~ p ~ p::before {
+  background-color: #fc9995;
+}
+
+.bg-gradient9 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#78DFF2), to(#f2b5d4));
+  background-image: linear-gradient(to top right, #78DFF2, #f2b5d4);
+}
+
+.bg-gradient9 ~ p::before {
+  background-color: #78DFF2;
+}
+
+.bg-gradient9 ~ p ~ p::before {
+  background-color: #f2b5d4;
+}
+
+.bg-gradient10 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#12c2e9), to(#f6af59));
+  background-image: linear-gradient(to top right, #12c2e9, #f6af59);
+}
+
+.bg-gradient10 ~ p::before {
+  background-color: #12c2e9;
+}
+
+.bg-gradient10 ~ p ~ p::before {
+  background-color: #f6af59;
+}
+
+.bg-gradient11 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#007991), to(#68dac7));
+  background-image: linear-gradient(to top right, #007991, #68dac7);
+}
+
+.bg-gradient11 ~ p::before {
+  background-color: #007991;
+}
+
+.bg-gradient11 ~ p ~ p::before {
+  background-color: #68dac7;
+}
+
+.bg-gradient12 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#d96113), to(#fed046));
+  background-image: linear-gradient(to top right, #d96113, #fed046);
+}
+
+.bg-gradient12 ~ p::before {
+  background-color: #d96113;
+}
+
+.bg-gradient12 ~ p ~ p::before {
+  background-color: #fed046;
+}
+/*# sourceMappingURL=style.css.map */

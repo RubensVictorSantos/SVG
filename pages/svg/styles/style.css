@@ -1,0 +1,173 @@
+body {
+  background-color: #faf9fd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: column;
+      -ms-flex-pack: column;
+          justify-content: column;
+  position: relative;
+}
+
+.main-container span {
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+.painel {
+  width: 350px;
+  overflow: auto;
+  background-color: white;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
+          box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
+}
+
+.painel .painel-title {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: .5rem;
+}
+
+.painel input[type=number] {
+  text-align: center;
+  width: 50px;
+  border: 1px solid #c8c8c8;
+  background-color: rgba(253, 253, 253, 0.5);
+}
+
+.painel input[type=range] {
+  height: 5px;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+}
+
+.painel input[type=range]::-ms-track {
+  width: 300px;
+  height: 5px;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+}
+
+.painel input[type=range]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+
+.painel input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.painel input[type=range]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+}
+
+.painel input[type=range]:focus::-ms-fill-lower {
+  background: #888;
+}
+
+.painel input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
+}
+
+.painel input[type=color] {
+  width: 22px;
+  height: 20px;
+  margin: 0px;
+  border: none;
+  background-color: transparent;
+}
+
+.painel input[type=color]::-webkit-color-swatch-wrapper {
+  background-color: transparent;
+  padding: 0px;
+}
+
+.painel input[type=color]::-webkit-color-swatch-wrapper::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+select {
+  border: none;
+  background-color: #f0f0f0;
+}
+
+.open-viewcode {
+  max-width: 300px;
+  max-height: 250px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 5px;
+  background-color: rgba(230, 230, 230, 0.3);
+  overflow: auto;
+  color: black;
+}
+
+.open-viewcode::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.open-viewcode::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: rgba(50, 50, 50, 0.3);
+}
+
+.painel::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.painel::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: auto;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.container .box {
+  width: 300px;
+  height: 300px;
+  padding: 2px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
+          box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
+  background-color: white;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 5px;
+}
+/*# sourceMappingURL=style.css.map */
