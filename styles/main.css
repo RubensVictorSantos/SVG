@@ -16,3 +16,18 @@ h5 {
     margin: 0;
     padding: 0;
 }
+
+.default-scrollbar {
+    overflow: auto
+}
+
+.default-scrollbar::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+
+}
+
+.default-scrollbar::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: rgba(50,50,50,0.3);
+}

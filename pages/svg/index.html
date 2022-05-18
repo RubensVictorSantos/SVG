@@ -15,114 +15,192 @@
 <body>
     <main class="main-container">
         <!-- Painel -->
-        <div class="painel" id="painel">
-            <h3 class="painel-title">Configurações</h3>
+        <div class="panel default-scrollbar" id="panel">
+            <h3 class="panel-title">Configurações</h3>
 
-            <h4 style="display: inline">Main:</h4>
-            <span id="btn-path">&#9662;</span>
-            <div>
-                <label for="svg-width">Zoom: </label>
-                <input type="range" min="64" max="650" id='svg-width' step="1">
-                </br>
-                <label for="svg-str">Stroke: </label> <input type="color" value="#aa9900" id='svg-str'>
-                <label for="svg-str-w">Stroke Width: </label> <input type="number" min="0" value="5" id='svg-str-w'>
-                </br>
-                <label for="svg-bg-color">Bg-color: </label><input type="color" value="#990000" id='svg-bg-color'>
-                <label for="svg-fill">Fill: </label> <input type="color" value="#3333ff" id='svg-fill'> </br>
-            </div>
-            <hr />
+            <!-- CONFIG. GERAL -->
+            <section class="panel-field">
+                <label class="">
+                    gerais
+                </label>
+                <div class="panel-group">
 
-            <h5 style="display:inline">Path:
-            </h5>
-            <span id="btn-path">&#9662;</span>
+                    <label for="svg-width">ZOOM:
+                        <input type="range" min="64" max="650" id='svg-width' step="1"/><span></span>
+                    </label>
 
-            <div class="box-painel" style="display: none;">
-                <label for="p-fill">Fill: </label><input type="color" value="#ff0000" id='p-fill'>
+                    <label for="svg-bg-color">Background color:
+                        <input type="color" value="#990000" id='svg-bg-color'/></label>
+                    </label>
 
-                <label for="p-fill-rule">Fill-rule: </label>
-                <select name="p-fill-rule" id='p-fill-rule'>
-                    <option value="nonzero" selected>nonzero</option>
-                    <option value="evenodd">evenodd </option>
+                    <label for="svg-str">Stroke:
+                        <input type="color" value="#aa9900" id='svg-str'>
+                    </label>
 
-                </select></br>
+                    <label for="svg-str-w">Stroke Width:
+                        <input type="number" min="0" value="5" id='svg-str-w'>
+                    </label>
 
-                <label for="p-str">Stroke: </label><input type="color" value="#00f0f0" id='p-str'>
-                <label for="p-str-w">Stroke width: </label><input type="number" value="5" min="0" step="0.1"
-                    id='p-str-w'></br>
+                    <label for="svg-fill">Fill:
+                        <input type="color" value="#3333ff" id='svg-fill'> </br>
+                    </label>
+                </div>
+            </section>
 
-                <label for="p-str-lcap">Stroke-linecap: </label>
-                <select name="p-str-lcap" id='p-str-lcap'>
-                    <option value="round" selected>round </option>
-                    <option value="butt">butt </option>
-                    <option value="squard">square </option>
+            <!-- PATH -->
+            <section class="panel-field">
+                <input id="btn-path" type="radio" name="rdo-title" />
+                <label for="btn-path" class="panel-field-title">
+                    Path
+                </label>
+                </h5>
 
-                </select></br>
+                <div class="panel-group close-panel-group">
+                    <label for="p-fill">Fill:
+                        <input type="color" value="#ff0000" id='p-fill'>
+                    </label>
 
-                <label for="p-str-ljoin">Stroke-linejoin: </label>
-                <select name="p-str-ljoin" id="p-str-ljoin">
-                    <option value="miter">miter </option>
-                    <option value="round">round </option>
-                    <option value="bevel">bevel </option>
+                    <label for="p-fill-rule">Fill-rule:
+                        <select name="p-fill-rule" id='p-fill-rule'>
+                            <option value="nonzero" selected>nonzero</option>
+                            <option value="evenodd">evenodd </option>
 
-                </select>
-            </div>
-            <hr />
+                        </select>
+                    </label>
 
-            <h5 style="display:inline">Rect:
-            </h5>
-            <span id="btn-rect">&#9662;</span>
+                    <label for="p-str">Stroke:
+                        <input type="color" value="#00f0f0" id='p-str'>
+                    </label>
 
-            <div class="box-painel" style="display: none;">
-                <label for="r-rx">rx: </label><input type="number" min="0" value="0" id='r-rx'>
-                <label for="r-ry">ry: </label><input type="number" min="0" value="0" id='r-ry'></br>
-                <label for="r-fill">Fill:</label><input type="color" value="#0fff00" id='r-fill'></br>
-                <label for="r-str">Stroke: </label><input type="color" value="#5800f0" id='r-str'>
-                <label for="r-str-w">Stroke width:</label><input type="number" min="0" value="0" id='r-str-w'></br>
-            </div>
-            <hr />
+                    <label for="p-str-w">Stroke width:
+                        <input type="number" value="5" min="0" step="0.1" id='p-str-w'></br>
+                    </label>
 
-            <h5 style="display:inline">Circle:
-            </h5>
-            <span id="btn-circle">&#9662;</span>
+                    <label for="p-str-lcap">Stroke-linecap:
+                        <select name="p-str-lcap" id='p-str-lcap'>
+                            <option value="round" selected>round </option>
+                            <option value="butt">butt </option>
+                            <option value="squard">square </option>
 
-            <div class="box-painel" style="display: none;">
-                <label>r: </label><input type="number" min="0" id='c-r'></br>
-                <label>Stroke: </label> <input type="color" value="#880999" id='c-str'></br>
-                <label>Fill: </label> <input type="color" value="#0f8050" id='c-fill'></br>
-                <label>Stroke width: </label><input type="number" id='c-str-w'></br>
-            </div>
-            <hr />
+                        </select>
+                    </label>
 
-            <h5 style="display:inline">Line:</h5>
-            <span id="btn-line">&#9662;</span>
+                    <label for="p-str-ljoin">Stroke-linejoin:
+                        <select name="p-str-ljoin" id="p-str-ljoin">
+                            <option value="miter">miter </option>
+                            <option value="round">round </option>
+                            <option value="bevel">bevel </option>
+                        </select>
+                    </label>
+                </div>
+            </section>
 
-            <div class="box-painel" style="display: none;">
-                <label>Stroke:</label> <input type="color" value="#995505" id='l-str'>
-                <label>Fill:</label> <input type="color" value="#99f900" id='l-fill'></br>
-                <label>Stroke width:</label><input type="number" value="5" id='l-str-w'></br>
+            <!-- RECT -->
+            <section class="panel-field">
+                <input id="btn-rect" type="radio" name="rdo-title" />
+                <label for="btn-rect" class="panel-field-title">
+                    Rect
+                </label>
 
-                <label for="l-str-lcap">Stroke-linecap: </label>
-                <select name="l-str-lcap" id='l-str-lcap'>
-                    <option value="round" selected>round </option>
-                    <option value="butt">butt </option>
-                    <option value="squard">square </option>
+                <div class="panel-group close-panel-group">
+                    <label for="r-rx">rx:
+                        <input type="number" min="0" value="0" id='r-rx'>
+                    </label>
 
-                </select></br>
+                    <label for="r-ry">ry:
+                        <input type="number" min="0" value="0" id='r-ry'>
+                    </label>
 
-                <label for="l-str-ljoin">Stroke-linejoin: </label>
-                <select name="l-str-ljoin" id="l-str-ljoin">
-                    <option value="miter">miter </option>
-                    <option value="round">round </option>
-                    <option value="bevel">bevel </option>
+                    <label for="r-fill">Fill:
+                        <input type="color" value="#0fff00" id='r-fill'>
+                    </label>
 
-                </select>
-            </div>
+                    <label for="r-str">Stroke:
+                        <input type="color" value="#5800f0" id='r-str'>
+                    </label>
 
-            <div id="box-code" class="open-viewcode" style="padding: 25px;">
+                    <label for="r-str-w">Stroke width:
+                        <input type="number" min="0" value="0" id='r-str-w'>
+                    </label>
+
+                </div>
+
+            </section>
+
+            <!-- CIRCLE -->
+            <section class="panel-field">
+                <input id="btn-circle" type="radio" name="rdo-title" />
+                <label for="btn-circle" class="panel-field-title">
+                    circle
+                </label>
+
+                <div class="panel-group close-panel-group">
+                    <label>r:
+                        <input type="number" min="0" id='c-r'>
+                    </label>
+                    <label>Stroke:
+                        <input type="color" value="#880999" id='c-str'>
+                    </label>
+                    <label>Fill:
+                        <input type="color" value="#0f8050" id='c-fill'>
+                    </label>
+                    <label>Stroke width:
+                        <input type="number" id='c-str-w'>
+                    </label>
+                </div>
+
+            </section>
+
+            <!-- LINE -->
+            <section class="panel-field">
+                <input id="btn-line" type="radio" name="rdo-title" />
+                <label for="btn-line" class="panel-field-title">
+                    Line
+                </label>
+
+                <div class="panel-group close-panel-group">
+
+                    <label>Stroke:
+                        <input type="color" value="#995505" id='l-str'>
+                    </label>
+
+                    <label>Fill:
+                        <input type="color" value="#99f900" id='l-fill'>
+                    </label>
+
+                    <label>Stroke width:
+                        <input type="number" value="5" id='l-str-w'>
+                    </label>
+
+                    <label for="l-str-lcap">Stroke-linecap:
+                        <select name="l-str-lcap" id='l-str-lcap'>
+                            <option value="round" selected>round </option>
+                            <option value="butt">butt </option>
+                            <option value="squard">square </option>
+
+                        </select>
+                    </label>
+
+                    <label for="l-str-ljoin">Stroke-linejoin:
+                        <select name="l-str-ljoin" id="l-str-ljoin">
+                            <option value="miter">miter </option>
+                            <option value="round">round </option>
+                            <option value="bevel">bevel </option>
+
+                        </select>
+                    </label>
+
+                </div>
+
+            </section>
+
+            <h4 class="panel-title">Visualizar codigo</h4>
+
+            <div id="box-code" class="open-viewcode default-scrollbar" style="padding: 25px;">
             </div>
         </div>
 
-        <div class="container" id="container">
+        <div class="container default-scrollbar" id="container">
 
             <h2 style="width: 100%;">Cart:</h2>
             <!-- CART -->

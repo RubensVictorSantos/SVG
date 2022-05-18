@@ -22,7 +22,7 @@ input {
   outline: none;
 }
 
-.painel {
+.panel {
   width: 350px;
   overflow: auto;
   background-color: white;
@@ -31,21 +31,21 @@ input {
           box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
 }
 
-.painel .painel-title {
+.panel .panel-title {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
   padding: .5rem;
 }
 
-.painel input[type=number] {
+.panel input[type=number] {
   text-align: center;
   width: 50px;
   border: 1px solid #c8c8c8;
   background-color: rgba(253, 253, 253, 0.5);
 }
 
-.painel input[type=range] {
+.panel input[type=range] {
   height: 5px;
   background-color: transparent;
   border-color: transparent;
@@ -53,42 +53,7 @@ input {
   color: transparent;
 }
 
-.painel input[type=range]::-ms-track {
-  width: 300px;
-  height: 5px;
-  background-color: transparent;
-  border-color: transparent;
-  border-width: 6px 0;
-  color: transparent;
-}
-
-.painel input[type=range]::-ms-fill-lower {
-  background: #777;
-  border-radius: 10px;
-}
-
-.painel input[type=range]::-ms-fill-upper {
-  background: #ddd;
-  border-radius: 10px;
-}
-
-.painel input[type=range]::-ms-thumb {
-  border: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: goldenrod;
-}
-
-.painel input[type=range]:focus::-ms-fill-lower {
-  background: #888;
-}
-
-.painel input[type=range]:focus::-ms-fill-upper {
-  background: #ccc;
-}
-
-.painel input[type=color] {
+.panel input[type=color] {
   width: 22px;
   height: 20px;
   margin: 0px;
@@ -96,14 +61,102 @@ input {
   background-color: transparent;
 }
 
-.painel input[type=color]::-webkit-color-swatch-wrapper {
+.panel input[type=color]::-webkit-color-swatch-wrapper {
   background-color: transparent;
   padding: 0px;
 }
 
-.painel input[type=color]::-webkit-color-swatch-wrapper::-webkit-color-swatch {
+.panel input[type=color]::-webkit-color-swatch {
   border: none;
   border-radius: 50%;
+}
+
+.panel-field {
+  margin-bottom: 1rem;
+}
+
+.panel-field > label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: .5rem .5rem;
+  cursor: pointer;
+}
+
+.panel-field .panel-field-title {
+  background-color: #eef7f3;
+}
+
+.panel-field .panel-field-title::after {
+  content: "\025B4";
+}
+
+.panel-field input[type=radio] {
+  display: none;
+}
+
+.panel-field input[type=radio]:checked ~ .panel-field-title {
+  background-color: #dcefe6;
+}
+
+.panel-field input[type=radio]:checked ~ .panel-field-title::after {
+  content: "\025BE";
+}
+
+.panel-field .panel-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #efeef7;
+  padding: .5rem;
+}
+
+.panel-field .panel-group label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .7rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: .3rem .5rem;
+}
+
+.panel-field .panel-group label input {
+  margin-left: .5rem;
+}
+
+.panel-field .panel-group label span {
+  margin-left: .1rem;
+  text-transform: lowercase;
+}
+
+.open-panel-group {
+  display: block !important;
+}
+
+.close-panel-group {
+  display: none !important;
 }
 
 select {
@@ -120,29 +173,8 @@ select {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 5px;
-  background-color: rgba(230, 230, 230, 0.3);
-  overflow: auto;
+  background-color: #efeef7;
   color: black;
-}
-
-.open-viewcode::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-.open-viewcode::-webkit-scrollbar-thumb {
-  border-radius: 50px;
-  background-color: rgba(50, 50, 50, 0.3);
-}
-
-.painel::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-.painel::-webkit-scrollbar-thumb {
-  border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .container {
