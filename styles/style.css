@@ -219,4 +219,134 @@ body {
 .bg-gradient12 ~ p ~ p::before {
   background-color: #fed046;
 }
+
+.bg-gradient13 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#0099FF), to(#FF9933));
+  background-image: linear-gradient(to top right, #0099FF, #FF9933);
+}
+
+.bg-gradient13 ~ p::before {
+  background-color: #0099FF;
+}
+
+.bg-gradient13 ~ p ~ p::before {
+  background-color: #FF9933;
+}
+
+.bg-gradient14 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#33CCCC), to(#FF5050));
+  background-image: linear-gradient(to top right, #33CCCC, #FF5050);
+}
+
+.bg-gradient14 ~ p::before {
+  background-color: #33CCCC;
+}
+
+.bg-gradient14 ~ p ~ p::before {
+  background-color: #FF5050;
+}
+
+.bg-gradient15 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#00FF99), to(#FF3399));
+  background-image: linear-gradient(to top right, #00FF99, #FF3399);
+}
+
+.bg-gradient15 ~ p::before {
+  background-color: #00FF99;
+}
+
+.bg-gradient15 ~ p ~ p::before {
+  background-color: #FF3399;
+}
+
+.bg-gradient16 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#33CC33), to(#FF00FF));
+  background-image: linear-gradient(to top right, #33CC33, #FF00FF);
+}
+
+.bg-gradient16 ~ p::before {
+  background-color: #33CC33;
+}
+
+.bg-gradient16 ~ p ~ p::before {
+  background-color: #FF00FF;
+}
+
+.bg-gradient17 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#99FF33), to(#9966FF));
+  background-image: linear-gradient(to top right, #99FF33, #9966FF);
+}
+
+.bg-gradient17 ~ p::before {
+  background-color: #99FF33;
+}
+
+.bg-gradient17 ~ p ~ p::before {
+  background-color: #9966FF;
+}
+
+.bg-gradient18 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#FFFF00), to(#3366FF));
+  background-image: linear-gradient(to top right, #FFFF00, #3366FF);
+}
+
+.bg-gradient18 ~ p::before {
+  background-color: #FFFF00;
+}
+
+.bg-gradient18 ~ p ~ p::before {
+  background-color: #3366FF;
+}
+
+.bg-gradient18 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#FFFF00), to(#3366FF));
+  background-image: linear-gradient(to top right, #FFFF00, #3366FF);
+}
+
+.bg-gradient18 ~ p::before {
+  background-color: #FFFF00;
+}
+
+.bg-gradient18 ~ p ~ p::before {
+  background-color: #3366FF;
+}
+
+.bg-gradient18 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#FFFF00), to(#3366FF));
+  background-image: linear-gradient(to top right, #FFFF00, #3366FF);
+}
+
+.bg-gradient18 ~ p::before {
+  background-color: #FFFF00;
+}
+
+.bg-gradient18 ~ p ~ p::before {
+  background-color: #3366FF;
+}
+
+.bg-gradient18 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#FFFF00), to(#3366FF));
+  background-image: linear-gradient(to top right, #FFFF00, #3366FF);
+}
+
+.bg-gradient18 ~ p::before {
+  background-color: #FFFF00;
+}
+
+.bg-gradient18 ~ p ~ p::before {
+  background-color: #3366FF;
+}
+
+.bg-gradient18 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#FFFF00), to(#3366FF));
+  background-image: linear-gradient(to top right, #FFFF00, #3366FF);
+}
+
+.bg-gradient18 ~ p::before {
+  background-color: #FFFF00;
+}
+
+.bg-gradient18 ~ p ~ p::before {
+  background-color: #3366FF;
+}
 /*# sourceMappingURL=style.css.map */
