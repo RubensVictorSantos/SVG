@@ -1,31 +1,52 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
-    <path style="
-        fill: #00ff88;
-        fill-rule: evenodd;
-        stroke: tomato; 
-        stroke-width: 0;"
-        
-        d=" M 21    76
-            L 25    60.5
-            A 29    29      0 1 1   37    72
-            L 21    76
-
-            M 28    69
-            L 30    60
-            A 24.1  24.1    0 1 1   37    66.8
-            L 28    69 Z
-
-            M 39.1  33
-            C 25    41      55      70,     64.5    56.8
-            C 65.5  52      64      53,     60      50.8
-            C 58    50      58      48.5,   55.5    52
-            C 53.5  54.5    54      54,     52      53.3
-            C 51    52.5    48      52,     43.5    46
-            C 43    44.8    42      44.5,   43.50   43
-            C 47    40      44.3    38.9,   44.1    37.3
-            C 42.6  32      41      33,     39.1    33 Z
-
-        "
-        />
-
-</svg> 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="0 0 100 100"
+   id="svg182"
+   sodipodi:docname="whatsapp.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata188">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs186" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     id="namedview184"
+     showgrid="false"
+     inkscape:zoom="2.69"
+     inkscape:cx="85.069501"
+     inkscape:cy="42.345985"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg182" />
+  <path
+     style="fill:#00ff88;fill-rule:evenodd;stroke:#ff6347;stroke-width:0"
+     d="M 8.1460005,91.282368 13.895437,69.511733 A 41.683416,40.732155 0 1 1 31.143747,85.66414 L 8.1460005,91.282368 M 18.207514,81.450469 21.082233,68.809455 a 34.640355,33.849826 0 1 1 10.061514,9.550987 z M 34.162202,30.886413 c -20.266765,11.236456 22.854009,51.968613 36.508922,33.428459 1.437359,-6.741875 -0.71868,-5.337317 -6.468117,-8.427343 -2.874718,-1.123645 -2.874718,-3.230481 -6.468116,1.685468 -2.874719,3.511393 -2.156039,2.809115 -5.030757,1.825925 -1.437359,-1.123646 -5.749436,-1.825925 -12.217553,-10.253266 -0.718679,-1.68547 -2.156039,-2.106836 0,-4.213673 5.030757,-4.213671 1.149888,-5.758684 0.862416,-8.005974 -2.156039,-7.444154 -4.455814,-6.039596 -7.186795,-6.039596 z"
+     id="path180" />
+</svg>
