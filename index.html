@@ -16,7 +16,54 @@
         <a href="./pages/svg/index.html">Página SVG</a>
         <a href="./pages/cores/gradient/index.html">Página Cores</a>
     </nav>
+    <main>
+        <section class="main-container">
+            <div class="box-input box-number-spinner">
+                <div class="container">
+                    <span class="next" onclick="nextNum()"></span>
+                    <span class="prev" onclick="prevNum()"></span>
+                    <div id="box"></div>
+                </div>
+                <script type="text/Javascript">
+                    var numbers = document.getElementById('box');
+                    for(let i=0;i<100;i++){
+                        var span = document.createElement('span');
+                        span.textContent = i;
+                        numbers.appendChild(span);
+                    }    
+                    var num = numbers.getElementsByTagName('span');
+                    var index = 0;
+        
+                    function nextNum(){
+                        num[index].style.display = 'none';
+                        index = (index + 1) % num.length;
+                        num[index].style.display = 'initial';
+        
+                    }
+                    
+                    function prevNum(){
+                        num[index].style.display = 'none';
+                        index = (index - 1 + num.length) % num.length;
+                        num[index].style.display = 'initial';
+        
+                    }
+                </script>
 
+                <h3>Number Spinner | Javascript</h3>
+            </div>
+            <div class="box-input">
+                <label for="chk" class="switch">
+                    <input id="chk" type="checkbox" />
+
+                    <span class="slider-switch round"></span>
+                </label>
+                <h3>Toggle Switch</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

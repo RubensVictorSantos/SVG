@@ -311,55 +311,173 @@ body {
   background-color: #ffeda1;
 }
 
-.bg-gradient18 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#FFFF00), to(#3366FF));
-  background-image: linear-gradient(to top right, #FFFF00, #3366FF);
+.box-number-spinner {
+  background-color: #000d0f !important;
+  font-family: "Poppins", sans-serif;
 }
 
-.bg-gradient18 ~ p::before {
-  background-color: #FFFF00;
+.box-number-spinner h3 {
+  color: #00deff;
+  margin-top: 1rem;
 }
 
-.bg-gradient18 ~ p ~ p::before {
-  background-color: #3366FF;
+.container {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  border-radius: 40px;
+  border: 2px solid rgba(25, 255, 255, 0.2);
 }
 
-.bg-gradient18 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#FFFF00), to(#3366FF));
-  background-image: linear-gradient(to top right, #FFFF00, #3366FF);
+.container:hover {
+  width: 120px;
+  border: 2px solid white;
 }
 
-.bg-gradient18 ~ p::before {
-  background-color: #FFFF00;
+.container:hover .next {
+  opacity: 1;
+  right: 20px;
 }
 
-.bg-gradient18 ~ p ~ p::before {
-  background-color: #3366FF;
+.container:hover .prev {
+  opacity: 1;
+  left: 20px;
 }
 
-.bg-gradient18 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#FFFF00), to(#3366FF));
-  background-image: linear-gradient(to top right, #FFFF00, #3366FF);
+.container .next {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  z-index: 1;
+  -webkit-transform: translateY(-50%) rotate(135deg);
+          transform: translateY(-50%) rotate(135deg);
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.bg-gradient18 ~ p::before {
-  background-color: #FFFF00;
+.container .prev {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  z-index: 1;
+  -webkit-transform: translateY(-50%) rotate(315deg);
+          transform: translateY(-50%) rotate(315deg);
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.bg-gradient18 ~ p ~ p::before {
-  background-color: #3366FF;
+#box span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 46px;
+  color: #00deff;
+  font-size: 24px;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: none;
 }
 
-.bg-gradient19 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#003c7f), to(#ffeda1));
-  background-image: linear-gradient(to top right, #003c7f, #ffeda1);
+#box span:nth-child(1) {
+  display: initial;
 }
 
-.bg-gradient19 ~ p::before {
-  background-color: #003c7f;
+.box-input {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #e9e6e6;
+  background-color: white;
 }
 
-.bg-gradient19 ~ p ~ p::before {
-  background-color: #ffeda1;
+/******************************** SWITCH ********************************/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  outline: none;
+}
+
+.slider-switch:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2.5px;
+  bottom: 3px;
+  margin-top: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-switch {
+  background-color: red;
+}
+
+input:focus + .slider-switch {
+  -webkit-box-shadow: 0 0 1px #ccc;
+          box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider-switch:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider-switch.round {
+  border-radius: 34px;
+}
+
+.slider-switch.round:before {
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
