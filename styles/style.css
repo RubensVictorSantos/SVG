@@ -234,81 +234,198 @@ body {
 }
 
 .bg-gradient14 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#33CCCC), to(#FF5050));
-  background-image: linear-gradient(to top right, #33CCCC, #FF5050);
-}
-
-.bg-gradient14 ~ p::before {
-  background-color: #33CCCC;
-}
-
-.bg-gradient14 ~ p ~ p::before {
-  background-color: #FF5050;
-}
-
-.bg-gradient15 {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#00FF99), to(#FF3399));
   background-image: linear-gradient(to top right, #00FF99, #FF3399);
 }
 
-.bg-gradient15 ~ p::before {
+.bg-gradient14 ~ p::before {
   background-color: #00FF99;
 }
 
-.bg-gradient15 ~ p ~ p::before {
+.bg-gradient14 ~ p ~ p::before {
   background-color: #FF3399;
 }
 
-.bg-gradient16 {
+.bg-gradient15 {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#33CC33), to(#FF00FF));
   background-image: linear-gradient(to top right, #33CC33, #FF00FF);
 }
 
-.bg-gradient16 ~ p::before {
+.bg-gradient15 ~ p::before {
   background-color: #33CC33;
 }
 
-.bg-gradient16 ~ p ~ p::before {
+.bg-gradient15 ~ p ~ p::before {
   background-color: #FF00FF;
 }
 
-.bg-gradient17 {
+.bg-gradient16 {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#99FF33), to(#9966FF));
   background-image: linear-gradient(to top right, #99FF33, #9966FF);
 }
 
-.bg-gradient17 ~ p::before {
+.bg-gradient16 ~ p::before {
   background-color: #99FF33;
 }
 
-.bg-gradient17 ~ p ~ p::before {
+.bg-gradient16 ~ p ~ p::before {
   background-color: #9966FF;
 }
 
-.bg-gradient18 {
+.bg-gradient17 {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#FFFF00), to(#3366FF));
   background-image: linear-gradient(to top right, #FFFF00, #3366FF);
 }
 
-.bg-gradient18 ~ p::before {
+.bg-gradient17 ~ p::before {
   background-color: #FFFF00;
 }
 
-.bg-gradient18 ~ p ~ p::before {
+.bg-gradient17 ~ p ~ p::before {
   background-color: #3366FF;
 }
 
-.bg-gradient19 {
+.bg-gradient18 {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#003c7f), to(#ffeda1));
   background-image: linear-gradient(to top right, #003c7f, #ffeda1);
 }
 
-.bg-gradient19 ~ p::before {
+.bg-gradient18 ~ p::before {
   background-color: #003c7f;
 }
 
-.bg-gradient19 ~ p ~ p::before {
+.bg-gradient18 ~ p ~ p::before {
   background-color: #ffeda1;
+}
+
+.bg-gradient19 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#00406c), to(#5b535c));
+  background-image: linear-gradient(to top right, #00406c, #5b535c);
+}
+
+.bg-gradient19 ~ p::before {
+  background-color: #00406c;
+}
+
+.bg-gradient19 ~ p ~ p::before {
+  background-color: #5b535c;
+}
+
+.bg-gradient20 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#004548), to(#913639));
+  background-image: linear-gradient(to top right, #004548, #913639);
+}
+
+.bg-gradient20 ~ p::before {
+  background-color: #004548;
+}
+
+.bg-gradient20 ~ p ~ p::before {
+  background-color: #913639;
+}
+
+.bg-gradient21 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#007a83), to(#ed1e19));
+  background-image: linear-gradient(to top right, #007a83, #ed1e19);
+}
+
+.bg-gradient21 ~ p::before {
+  background-color: #007a83;
+}
+
+.bg-gradient21 ~ p ~ p::before {
+  background-color: #ed1e19;
+}
+
+.bg-gradient22 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#33CCCC), to(#FF5050));
+  background-image: linear-gradient(to top right, #33CCCC, #FF5050);
+}
+
+.bg-gradient22 ~ p::before {
+  background-color: #33CCCC;
+}
+
+.bg-gradient22 ~ p ~ p::before {
+  background-color: #FF5050;
+}
+
+.bg-gradient23 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ed1e19), to(#ffe7f0));
+  background-image: linear-gradient(to top right, #ed1e19, #ffe7f0);
+}
+
+.bg-gradient23 ~ p::before {
+  background-color: #ed1e19;
+}
+
+.bg-gradient23 ~ p ~ p::before {
+  background-color: #ffe7f0;
+}
+
+.bg-gradient24 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#007a83), to(#ffe7f0));
+  background-image: linear-gradient(to top right, #007a83, #ffe7f0);
+}
+
+.bg-gradient24 ~ p::before {
+  background-color: #007a83;
+}
+
+.bg-gradient24 ~ p ~ p::before {
+  background-color: #ffe7f0;
+}
+
+.bg-gradient25 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ffff00), to(#33cccc));
+  background-image: linear-gradient(to top right, #ffff00, #33cccc);
+}
+
+.bg-gradient25 ~ p::before {
+  background-color: #ffff00;
+}
+
+.bg-gradient25 ~ p ~ p::before {
+  background-color: #33cccc;
+}
+
+.bg-gradient26 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ff9999), to(#ffcc99));
+  background-image: linear-gradient(to top right, #ff9999, #ffcc99);
+}
+
+.bg-gradient26 ~ p::before {
+  background-color: #ff9999;
+}
+
+.bg-gradient26 ~ p ~ p::before {
+  background-color: #ffcc99;
+}
+
+.bg-gradient27 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ffcccc), to(#ccffff));
+  background-image: linear-gradient(to top right, #ffcccc, #ccffff);
+}
+
+.bg-gradient27 ~ p::before {
+  background-color: #ffcccc;
+}
+
+.bg-gradient27 ~ p ~ p::before {
+  background-color: #ccffff;
+}
+
+.bg-gradient28 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ff0066), to(#cc66ff));
+  background-image: linear-gradient(to top right, #ff0066, #cc66ff);
+}
+
+.bg-gradient28 ~ p::before {
+  background-color: #ff0066;
+}
+
+.bg-gradient28 ~ p ~ p::before {
+  background-color: #cc66ff;
 }
 
 .box-number-spinner {
@@ -321,6 +438,7 @@ body {
   margin-top: 1rem;
 }
 
+/******************************** NUMBER SPINNER ********************************/
 .container {
   position: relative;
   width: 80px;
@@ -344,7 +462,8 @@ body {
   left: 20px;
 }
 
-.container .next {
+.container .next,
+.container .prev {
   position: absolute;
   top: 50%;
   right: 50px;
@@ -354,30 +473,20 @@ body {
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   z-index: 1;
-  -webkit-transform: translateY(-50%) rotate(135deg);
-          transform: translateY(-50%) rotate(135deg);
   cursor: pointer;
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
+.container .next {
+  -webkit-transform: translateY(-50%) rotate(135deg);
+          transform: translateY(-50%) rotate(135deg);
+}
+
 .container .prev {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  z-index: 1;
   -webkit-transform: translateY(-50%) rotate(315deg);
           transform: translateY(-50%) rotate(315deg);
-  cursor: pointer;
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 #box span {
@@ -433,7 +542,21 @@ body {
   height: 0;
 }
 
-.slider-switch {
+.switch input:checked + .slider-switch {
+  background-color: red;
+}
+
+.switch input:focus + .slider-switch {
+  -webkit-box-shadow: 0 0 1px #ccc;
+          box-shadow: 0 0 1px #ccc;
+}
+
+.switch input:checked + .slider-switch:before {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+
+.switch .slider-switch {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -446,7 +569,7 @@ body {
   outline: none;
 }
 
-.slider-switch:before {
+.switch .slider-switch:before {
   position: absolute;
   content: "";
   height: 14px;
@@ -459,25 +582,157 @@ body {
   transition: .4s;
 }
 
-input:checked + .slider-switch {
-  background-color: red;
-}
-
-input:focus + .slider-switch {
-  -webkit-box-shadow: 0 0 1px #ccc;
-          box-shadow: 0 0 1px #ccc;
-}
-
-input:checked + .slider-switch:before {
-  -webkit-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-.slider-switch.round {
+.switch .slider-switch.round {
   border-radius: 34px;
 }
 
-.slider-switch.round:before {
+.switch .slider-switch.round:before {
   border-radius: 50%;
+}
+
+/******************************** INPUT FILE ********************************/
+input[type='file'] {
+  display: none;
+}
+
+.lbl-file {
+  background-color: #ff1a1a;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem;
+  padding: 6px 19px;
+}
+
+.lbl-file:disabled {
+  background-color: #555 !important;
+  border-radius: 3px;
+  color: #555;
+  cursor: pointer;
+  margin: 1rem;
+  padding: 6px 19px;
+}
+
+.lbl-file:active {
+  background-color: #b30000;
+}
+
+.lbl-file:hover {
+  background-color: #e60000;
+}
+
+/******************************** SPINNER ********************************/
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-width: 5px;
+  border-bottom-color: transparent !important;
+  border-right-color: transparent !important;
+  border-radius: 50%;
+  margin: 5rem auto;
+  -webkit-animation: spin .5s linear infinite;
+          animation: spin .5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    border-color: #00c80a;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    border-color: #00c83c;
+    left: 200;
+    top: 0;
+  }
+  50% {
+    border-color: #00c86e;
+    left: 200;
+    top: 200;
+  }
+  75% {
+    border-color: #00c8a0;
+    left: 0;
+    top: 200;
+  }
+  100% {
+    border-color: #00c8d2;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    border-color: #00c80a;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    border-color: #00c83c;
+    left: 200;
+    top: 0;
+  }
+  50% {
+    border-color: #00c86e;
+    left: 200;
+    top: 200;
+  }
+  75% {
+    border-color: #00c8a0;
+    left: 0;
+    top: 200;
+  }
+  100% {
+    border-color: #00c8d2;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.txt-spinner {
+  -webkit-animation: load 2s linear infinite;
+          animation: load 2s linear infinite;
+}
+
+@-webkit-keyframes load {
+  0% {
+    color: #00c800;
+  }
+  25% {
+    color: #00c840;
+  }
+  50% {
+    color: #00c880;
+  }
+  75% {
+    color: #00c8bf;
+  }
+  100% {
+    color: #00c8ff;
+  }
+}
+
+@keyframes load {
+  0% {
+    color: #00c800;
+  }
+  25% {
+    color: #00c840;
+  }
+  50% {
+    color: #00c880;
+  }
+  75% {
+    color: #00c8bf;
+  }
+  100% {
+    color: #00c8ff;
+  }
 }
 /*# sourceMappingURL=style.css.map */

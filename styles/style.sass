@@ -71,6 +71,7 @@ body
         color: #00deff
         margin-top: 1rem
 
+/******************************** NUMBER SPINNER ********************************/
 .container
     position: relative
     width: 80px
@@ -89,7 +90,8 @@ body
             opacity: 1
             left: 20px
 
-    .next
+    .next,
+    .prev
         position: absolute
         top: 50%
         right: 50px
@@ -99,25 +101,15 @@ body
         border-top: 2px solid #fff
         border-left: 2px solid #fff
         z-index: 1
-        transform: translateY(-50%) rotate(135deg)
         cursor: pointer
         opacity: 0
         transition: 0.5s
 
+    .next
+        transform: translateY(-50%) rotate(135deg)
+
     .prev
-        position: absolute
-        top: 50%
-        left: 50px
-        display: block
-        width: 12px
-        height: 12px
-        border-top: 2px solid #fff
-        border-left: 2px solid #fff
-        z-index: 1
         transform: translateY(-50%) rotate(315deg)
-        cursor: pointer
-        opacity: 0
-        transition: 0.5s
 
 #box
     span
@@ -137,7 +129,7 @@ body
 .box-input
     display: inline-flex
     border-radius: 10px
-    justify-content: space-around 
+    justify-content: space-around
     align-items: center
     flex-direction: column
     padding: 1rem
@@ -152,55 +144,114 @@ body
     width: 44px
     height: 20px
 
-
-    & input
+    input
         opacity: 0
         width: 0
         height: 0
 
-.slider-switch
-    position: absolute
-    cursor: pointer
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    background-color: #ccc
-    -webkit-transition: .4s
-    transition: .4s
-    outline: none
+        &:checked+.slider-switch
+            background-color: red
 
+        &:focus+.slider-switch
+            box-shadow: 0 0 1px #ccc
 
-    &:before
+        &:checked+.slider-switch:before
+            transform: translateX(24px)
+
+    .slider-switch
         position: absolute
-        content: ""
-        height: 14px
-        width: 14px
-        left: 2.5px
-        bottom: 3px
-        margin-top: 1px
-        background-color: white
-        -webkit-transition: .4s
+        cursor: pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: #ccc
         transition: .4s
+        outline: none
 
+        &:before
+            position: absolute
+            content: ""
+            height: 14px
+            width: 14px
+            left: 2.5px
+            bottom: 3px
+            margin-top: 1px
+            background-color: white
+            transition: .4s
 
-    input:checked+&
-        background-color: red
+        &.round
+            border-radius: 34px
+            &:before
+                border-radius: 50%
 
+/******************************** INPUT FILE ********************************/
 
-    input:focus+&
-        box-shadow: 0 0 1px #ccc
+input[type='file']
+    display: none
 
+.lbl-file
+    background-color: $red
+    border-radius: 3px
+    color: #fff
+    cursor: pointer
+    margin: 1rem
+    padding: 6px 19px
 
-    input:checked+&:before
-        -webkit-transform: translateX(26px)
-        -ms-transform: translateX(26px)
-        transform: translateX(26px)
+    &:disabled
+        background-color: #555!important
+        border-radius: 3px
+        color: #555
+        cursor: pointer
+        margin: 1rem
+        padding: 6px 19px
 
+    &:active
+        background-color: $red-active
 
-    &.round
-        border-radius: 34px
+    &:hover
+        background-color: $red-hover
 
+/******************************** SPINNER ********************************/
 
-    &.round:before
-        border-radius: 50%
+.spinner
+    width: 40px
+    height: 40px
+    border-style: solid
+    border-width: 5px
+    border-bottom-color: transparent!important
+    border-right-color: transparent!important
+    border-radius: 50%
+    margin: 5rem auto
+    animation: spin .5s linear infinite
+
+@keyframes spin
+    0%
+        border-color: rgb(0,200,10)
+        left: 0
+        top: 0
+    25%
+        border-color: rgb(0,200,60)
+        left: 200
+        top: 0
+    50%
+        border-color: rgb(0,200,110)
+        left: 200
+        top: 200
+    75%
+        border-color: rgb(0,200,160)
+        left: 0
+        top: 200
+    100%
+        border-color: rgb(0,200,210)
+        left: 0
+        top: 0
+        transform: rotate(360deg)
+
+.txt-spinner
+    animation: load 2s linear infinite
+
+@keyframes load
+    @for $i from 0 through 4
+        #{$i * 25%}
+            color: rgb(0,200,$i * 25%)
