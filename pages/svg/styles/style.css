@@ -1,18 +1,14 @@
+@charset "UTF-8";
 body {
   background-color: #faf9fd;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: column;
-      -ms-flex-pack: column;
-          justify-content: column;
+  justify-content: column;
   position: relative;
 }
-
 .main-container span {
   border-radius: 50px;
   cursor: pointer;
@@ -27,24 +23,20 @@ input {
   overflow: auto;
   background-color: white;
   padding: 1rem;
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
-          box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
+  box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
 }
-
 .panel .panel-title {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-
 .panel input[type=number] {
   text-align: center;
   width: 50px;
-  border: 1px solid #c8c8c8;
+  border: 1px solid rgb(200, 200, 200);
   background-color: rgba(253, 253, 253, 0.5);
 }
-
 .panel input[type=range] {
   height: 5px;
   background-color: transparent;
@@ -52,7 +44,6 @@ input {
   border-width: 6px 0;
   color: transparent;
 }
-
 .panel input[type=color] {
   width: 22px;
   height: 20px;
@@ -60,12 +51,10 @@ input {
   border: none;
   background-color: transparent;
 }
-
 .panel input[type=color]::-webkit-color-swatch-wrapper {
   background-color: transparent;
   padding: 0px;
 }
-
 .panel input[type=color]::-webkit-color-swatch {
   border: none;
   border-radius: 50%;
@@ -74,80 +63,53 @@ input {
 .panel-field {
   margin-bottom: 1rem;
 }
-
 .panel-field > label {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: .9rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: bold;
-  padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
   cursor: pointer;
 }
-
 .panel-field .panel-field-title {
   background-color: #eef7f3;
 }
-
 .panel-field .panel-field-title::after {
-  content: "\025B4";
+  content: "▴";
 }
-
 .panel-field input[type=radio] {
   display: none;
 }
-
 .panel-field input[type=radio]:checked ~ .panel-field-title {
   background-color: #dcefe6;
 }
-
 .panel-field input[type=radio]:checked ~ .panel-field-title::after {
-  content: "\025BE";
+  content: "▾";
 }
-
 .panel-field .panel-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   background-color: #efeef7;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-
 .panel-field .panel-group label {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: .7rem;
+  align-items: center;
+  font-size: 0.7rem;
   text-transform: uppercase;
   font-weight: bolder;
-  padding: .3rem .5rem;
+  padding: 0.3rem 0.5rem;
 }
-
 .panel-field .panel-group label input {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
-
 .panel-field .panel-group label span {
-  margin-left: .1rem;
+  margin-left: 0.1rem;
   text-transform: lowercase;
 }
 
@@ -161,7 +123,7 @@ input {
 
 select {
   border: none;
-  background-color: #f0f0f0;
+  background-color: rgb(240, 240, 240);
 }
 
 .open-viewcode {
@@ -170,8 +132,7 @@ select {
   border: none;
   border-radius: 3px;
   padding-left: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 5px;
   background-color: #efeef7;
   color: black;
@@ -180,26 +141,19 @@ select {
 .container {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   overflow: auto;
   background-color: transparent;
   padding: 1rem;
 }
-
 .container .box {
   width: 300px;
   height: 300px;
   padding: 2px;
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
-          box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
+  box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 0.2);
   background-color: white;
   border-radius: 6px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 5px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
